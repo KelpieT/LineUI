@@ -1,6 +1,6 @@
 # LineUI
 
-Simple UI Line.
+Simple UI Line for Unity.
 LineUI generate line mesh and render as ui element.
 Line corners can be rounded.
 

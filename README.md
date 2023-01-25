@@ -15,5 +15,5 @@ Line corners can be rounded.
 
 - Can modify color, thickness and round detailing
 
-![Alt text](Screenshots/Screenshot_3.png?raw=true "Title")
-![Alt text](Screenshots/Screenshot_4.png?raw=true "Title")
+![Alt text](https://github.com/KelpieT/LineUI/blob/master/Sreenshots/Screenshot_3.png?raw=true "Title")
+![Alt text](https://github.com/KelpieT/LineUI/blob/master/Sreenshots/Screenshot_4.png?raw=true "Title")

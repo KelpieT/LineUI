@@ -23,10 +23,11 @@ namespace LineUI
 		protected override void OnPopulateMesh(VertexHelper vh)
 		{
 			vh.Clear();
-			DrawLine(vh);
+			SetVertex(vh);
+			SetTriangles(vh);
 		}
 
-		private void DrawLine(VertexHelper vh)
+		private void SetVertex(VertexHelper vh)
 		{
 			UIVertex vert = UIVertex.simpleVert;
 			vert.color = color;
@@ -45,7 +46,7 @@ namespace LineUI
 					for (int j = 0; j < roundCount; j++)
 					{
 						float ang = lastAngle + anglePerRound * j;
-						Vector2 roundOffset = (Vector2)(Quaternion.Euler(0, 0, ang) * Vector3.up * thickness);
+						Vector2 roundOffset = Quaternion.Euler(0, 0, ang) * Vector2.up * thickness;
 						vert.position = previousPos - roundOffset;
 						vh.AddVert(vert);
 
@@ -69,6 +70,11 @@ namespace LineUI
 				vert.position = currentPos + offset;
 				vh.AddVert(vert);
 			}
+			
+		}
+
+		private static void SetTriangles(VertexHelper vh)
+		{
 			for (int i = 0; i < vh.currentVertCount - 2; i += 2)
 			{
 				int index = i;

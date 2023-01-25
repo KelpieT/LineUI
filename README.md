@@ -14,3 +14,6 @@ Line corners can be rounded.
 * Or set all screenPositions via script by method SetLine(List<Vector2> screenPositions)
 
 - Can modify color, thickness and round detailing
+
+![Alt text](Screenshots/Screenshot_3.png?raw=true "Title")
+![Alt text](Screenshots/Screenshot_4.png?raw=true "Title")
